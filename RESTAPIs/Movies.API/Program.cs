@@ -17,7 +17,7 @@ public class Program
         builder.Services.AddSwaggerGen();
         
         
-        builder.Services.AddSingleton<IMovieRepository, MovieRepository>();
+        //builder.Services.AddSingleton<IMovieRepository, MovieRepository>();
         //Above statement is not a correct way from the design perspective, instead use the below statement
         //Create our own extension method
         builder.Services.AddApplication();
