@@ -1,0 +1,23 @@
+REST is an architecture style to build distributed hypermedia systems
+Main Constraints of REST:
+1. Uniform Interface: A clear defined interface between a client and the server
+    - Identification of Resources (model)
+    - Manupulation of resources through representations
+    - Self-Descriptive Messages
+    - Hypermedia as the engine of application state
+2. Stateless: When a client sends request to the server, that messages should contains everything that server needs to know and server should not rely on the previous state 
+3. Cacheable: Server can let the client know that if the response can be cached and for how much duration
+4. Client Server: Client and server can evolve independently as long as the contracts are aggreed on
+5. Layered System: Client can't know if it is directly connected to a load balancer or a server
+
+Idempotency:
+No matter how many times a request is processed, the result is alwys be the same on the server
+GET: Idempotent
+PUT: Idempotent
+DELETE: Idempotent
+POST: Not Idempotent
+HEAD: Idempotent
+OPTIONS: Idempotent
+TRACE: Idempotent
+
+
