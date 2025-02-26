@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started", "Getting Started", "{70AD68A7-4BAB-4241-9DA7-9B5B3373EA41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.API", "Movies.API\Movies.API.csproj", "{C9003543-0DF0-4DF9-964B-88B54D0F408E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Application", "Movies.Application\Movies.Application.csproj", "{C7582C44-85E2-4FD9-9503-26C77A4F9B24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Contracts", "Movies.Contracts\Movies.Contracts.csproj", "{8F68C91E-C979-4C65-9D7C-C85A78E2E23F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.API", "Movies.API\Movies.API.csproj", "{9EFCDA9B-1DD2-49A8-A651-9B66A13A9E8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,15 +14,11 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C9003543-0DF0-4DF9-964B-88B54D0F408E} = {70AD68A7-4BAB-4241-9DA7-9B5B3373EA41}
 		{C7582C44-85E2-4FD9-9503-26C77A4F9B24} = {70AD68A7-4BAB-4241-9DA7-9B5B3373EA41}
 		{8F68C91E-C979-4C65-9D7C-C85A78E2E23F} = {70AD68A7-4BAB-4241-9DA7-9B5B3373EA41}
+		{9EFCDA9B-1DD2-49A8-A651-9B66A13A9E8A} = {70AD68A7-4BAB-4241-9DA7-9B5B3373EA41}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C9003543-0DF0-4DF9-964B-88B54D0F408E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9003543-0DF0-4DF9-964B-88B54D0F408E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9003543-0DF0-4DF9-964B-88B54D0F408E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9003543-0DF0-4DF9-964B-88B54D0F408E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7582C44-85E2-4FD9-9503-26C77A4F9B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C7582C44-85E2-4FD9-9503-26C77A4F9B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7582C44-85E2-4FD9-9503-26C77A4F9B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,5 +27,9 @@ Global
 		{8F68C91E-C979-4C65-9D7C-C85A78E2E23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F68C91E-C979-4C65-9D7C-C85A78E2E23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F68C91E-C979-4C65-9D7C-C85A78E2E23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EFCDA9B-1DD2-49A8-A651-9B66A13A9E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFCDA9B-1DD2-49A8-A651-9B66A13A9E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFCDA9B-1DD2-49A8-A651-9B66A13A9E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFCDA9B-1DD2-49A8-A651-9B66A13A9E8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
