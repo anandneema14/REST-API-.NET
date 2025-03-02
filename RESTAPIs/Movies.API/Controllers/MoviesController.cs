@@ -25,4 +25,22 @@ public class MoviesController : ControllerBase
         //Better to return Created and we should not return Ok
         return Created($"/{ApiEndPoints.Movies.Create}/{movie.Id}", movie);
     }
+
+    [HttpGet(ApiEndPoints.Movies.Get)]
+    public async Task<IActionResult> GetByIdAsync([FromRoute] Guid id)
+    {
+        var movie = await _movieRepository.GetByIdAsync(id);
+        if (movie is null)
+        {
+            return NotFound();
+        }
+        return Ok(movie.MapToResponse());
+    }
+    
+    [HttpGet(ApiEndPoints.Movies.GetAll)]
+    public async Task<IActionResult> GetAllMoviesAsync()
+    {
+        var movie = await _movieRepository.GetAllAsync();
+        return Ok(movie);
+    }
 }

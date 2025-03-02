@@ -13,5 +13,8 @@ public static class ApiEndPoints
         private const string MoviesRoute = $"{ApiBase}/movies";
 
         public const string Create = MoviesRoute;
+
+        public const string Get = $"/{MoviesRoute}/{{Id:guid}}";
+        public const string GetAll = MoviesRoute;
     }
 }
