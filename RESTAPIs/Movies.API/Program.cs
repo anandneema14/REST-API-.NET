@@ -1,7 +1,8 @@
 using Movies.Application;
+using Movies.Application.Database;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 //rather we should create a class and put all our dependencies there and use the function here.
 //CODE LOOKS CLEANER THIS WAY
 builder.Services.AddApplication();
+builder.Services.AddDatabase(configuration["Database:ConnectionString"]!);
 
 var app = builder.Build();
 
@@ -29,5 +31,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+var dbInitializer = app.Services.GetRequiredService<DbInitializer>();
+await dbInitializer.InitializeAsync();
 
 app.Run();
