@@ -14,7 +14,7 @@ public static class ApiEndPoints
 
         public const string Create = MoviesRoute;
 
-        public const string Get = $"/{MoviesRoute}/{{Id:guid}}";
+        public const string Get = $"/{MoviesRoute}/{{IdOrSlug}}";
         public const string GetAll = MoviesRoute;
         
         public const string Update = $"/{MoviesRoute}/{{Id:guid}}";
