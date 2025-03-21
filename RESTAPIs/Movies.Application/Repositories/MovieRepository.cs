@@ -106,7 +106,7 @@ public class MovieRepository(IDbConnectionFactory connectionFactory) : IMovieRep
 
         await connection.ExecuteAsync(
             new CommandDefinition("""
-                                  delete from genres where movieid = @id
+                                  delete from genres where movieid = @movieid
                                   """, new { movieid = movie.Id }));
 
         foreach (var genre in movie.Genres)
